@@ -1,7 +1,37 @@
 {
   "name": "react-simple-page-title",
+  "description": "Change page titles declaratively in React",
   "version": "0.1.0",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/react-simple-page-title.umd.js",
+  "module": "dist/react-simple-page-title.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-simple-page-title.es.js",
+      "require": "./dist/react-simple-page-title.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniotanio7/react-simple-page-title.git"
+  },
+  "keywords": [
+    "react",
+    "page title",
+    "declarative",
+    "head"
+  ],
+  "bugs": {
+    "url": "https://github.com/taniotanio7/react-simple-page-title/issues"
+  },
+  "author": {
+    "name": "Jonatan Witoszek"
+  },
+  "homepage": "https://github.com/taniotanio7/react-simple-page-title",
+  "types": "./dist/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

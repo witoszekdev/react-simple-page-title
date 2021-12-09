@@ -10,12 +10,19 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
     "@types/react": "^17.0.37",
+    "commitizen": "^4.2.4",
     "husky": "^7.0.4",
     "typescript": "^4.4.4",
     "vite": "^2.7.0"
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }

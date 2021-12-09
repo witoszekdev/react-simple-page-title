@@ -1,2 +1,2 @@
-export { useTitle } from "./useTitle";
+export { usePageTitle } from "./usePageTitle";
 export { PageTitle } from "./PageTitle";

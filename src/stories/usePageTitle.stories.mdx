@@ -1,0 +1,21 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="usePageTitle" />
+
+# usePageTitle
+
+This hook can be used interchangabely with `PageTitle` component.
+
+Simply use it inside your component and pass the new page title:
+
+```jsx
+import { usePageTitle } from 'react-simple-page-title';
+
+const MyComponent = () => {
+  usePageTitle("My title");
+
+  return (
+    // ...
+  )
+}
+```

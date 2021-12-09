@@ -1,7 +1,9 @@
-const path = require("path");
-const { defineConfig } = require("vite");
+import path from "path";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 module.exports = defineConfig({
+  plugins: [react()],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),

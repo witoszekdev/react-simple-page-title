@@ -1,6 +1,7 @@
 import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import typescript from "@rollup/plugin-typescript";
 
 module.exports = defineConfig({
   plugins: [react()],
@@ -21,6 +22,16 @@ module.exports = defineConfig({
           react: "React",
         },
       },
+      plugins: [
+        typescript({
+          target: "es2020",
+          rootDir: path.resolve(__dirname, "src"),
+          declaration: true,
+          declarationDir: path.resolve(__dirname, "dist"),
+          exclude: path.resolve(__dirname, "node_modules/**"),
+          allowSyntheticDefaultImports: true,
+        }),
+      ],
     },
   },
 });
